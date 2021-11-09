@@ -1,18 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getMessages } from '../redux/messages/messages';
+import './common.css';
 
-const HelloWorld = ({ greeting }) => (
-  <React.Fragment>
-    {greeting}
-  </React.Fragment>
-);
+const Greeting = () => {
+  const dispatch = useDispatch();
+  const { messages } = useSelector((state) => state);
 
-HelloWorld.defaultProps = {
-  greeting: ''
-};
+  console.log(messages);
 
-HelloWorld.propTypes = {
-  greeting: PropTypes.string
+  useEffect(() => {
+    dispatch(getMessages());
+  }, []);
+
+  return (
+    <div className="greeting">
+      <p>{messages[Math.floor(Math.random() * messages.length)]}</p>
+    </div>
+  );
 };
 
 export default Greeting;
