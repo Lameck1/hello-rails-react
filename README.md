@@ -18,7 +18,7 @@ This is practice project on working with the `react-rails` gem. This gem allows 
 
 ## Built With
 
-- Ruby v2.7.2
+- Ruby v3.0.2
 - Rails 6.1.2
 - Postgresql
 - Bootstap
