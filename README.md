@@ -46,7 +46,7 @@ This is practice project on working with the `react-rails` gem. This gem allows 
   ```
 
   ```bash
-  rails webpacker:install:react
+  yarn install
   ```
 
 - At this point, you still don't have the PostgreSQL database. Run the following to get setup:
