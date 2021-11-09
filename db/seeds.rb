@@ -11,7 +11,11 @@ greetings = [
   'Long time no see!',
   'How have you been?',
   'G’day mate!',
-  'What’s up?'
+  'What’s up?',
+  "It's a pleasure to meet you.",
+  "What's new?",
+  'Howdy!'
+
 ]
 
 greetings.each do |greeting|
